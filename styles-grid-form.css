@@ -1,0 +1,30 @@
+:root {
+  --main-bg-color: #5feba5;
+  --main-border-color: #1b5a33;
+}
+
+.container__grid-form {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--main-bg-color);
+  padding: 36px;
+}
+
+.container__grid-form > label,
+input,
+button {
+  border: 8px solid var(--main-border-color);
+  padding: 24px;
+  text-align: center;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container__grid-form {
+    grid-template-columns: 95%;
+    padding: 24px;
+  }
+}
